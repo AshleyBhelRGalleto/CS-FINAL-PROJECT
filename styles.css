@@ -87,6 +87,26 @@ a:hover {
     text-decoration: underline;
 }
 
+a[href^="https"] {
+    color: green;
+}
+
+a[href$=".pdf"] {
+    color: red;
+}
+
+a[target] {
+    font-weight: bold;
+}
+
+a[title] {
+    text-decoration: underline;
+}
+
+a[href*="reasons.html"] {
+    background-color: #ffeb3b;
+}
+
 footer {
     background-color: #a7c6ed; 
     color: #fff;
