@@ -86,9 +86,11 @@ audio, video {
 a {
     color: #0066cc;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
 a:hover {
+    color: #ff4500; /* Color change on hover */
     text-decoration: underline;
 }
 
@@ -110,6 +112,7 @@ footer {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* For smooth transitions */
 }
 
 /* For effect and reason sections */
@@ -118,13 +121,13 @@ footer {
     border: 2px solid #6fa3e8;
     border-radius: 10px;
     padding: 20px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* For smooth transitions */
 }
 
 /* Adding subtle hover effects to sections */
 .intro:hover, .purpose:hover, .importance:hover, .link-section:hover, .reasons:hover, .effects:hover {
     background-color: #d0eaff;
-    transform: scale(1.02);
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transform: scale(1.05) translateY(-10px); /* Slightly grows and shifts up */
 }
 
 /* Adjusting the video size for proper ratio */
@@ -159,4 +162,19 @@ a:hover {
     border-radius: 10px;
     margin-top: 20px;
     border: 2px solid #0074d9;
+}
+
+/* Adding transformation to buttons or any clickable elements */
+button {
+    padding: 10px 20px;
+    background-color: #0074d9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1); /* Button grows slightly on hover */
 }
