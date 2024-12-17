@@ -1,21 +1,18 @@
-/* Resetting some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f8ff; /* Baby blue background */
+    background-color: #f0f8ff;
     color: #333;
     line-height: 1.6;
 }
 
-/* Header styles */
 header {
-    background-color: #a7c6ed; /* Lighter blue for header */
+    background-color: #a7c6ed; 
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -30,9 +27,8 @@ header p {
     font-size: 1.2rem;
 }
 
-/* Navigation styles */
 nav.topnav {
-    background-color: #6fa3e8; /* Light blue navigation bar */
+    background-color: #6fa3e8; 
     overflow: hidden;
 }
 
@@ -50,7 +46,6 @@ nav.topnav a:hover {
     background-color: #4f8cd7;
 }
 
-/* Main content styles */
 main {
     padding: 20px;
 }
@@ -73,7 +68,6 @@ ul li {
     margin-bottom: 10px;
 }
 
-/* Audio and Video Styles */
 audio, video {
     max-width: 100%;
     margin-top: 10px;
@@ -82,7 +76,6 @@ audio, video {
     padding: 5px;
 }
 
-/* Links and Buttons */
 a {
     color: #0066cc;
     text-decoration: none;
@@ -90,13 +83,12 @@ a {
 }
 
 a:hover {
-    color: #ff4500; /* Color change on hover */
+    color: #ff4500; 
     text-decoration: underline;
 }
 
-/* Footer styles */
 footer {
-    background-color: #a7c6ed; /* Same as header */
+    background-color: #a7c6ed; 
     color: #fff;
     text-align: center;
     padding: 15px 0;
@@ -105,49 +97,43 @@ footer {
     bottom: 0;
 }
 
-/* Styling for sections with multimedia (audio, video) */
 .intro, .purpose, .importance, .link-section {
     background-color: #e1efff;
     border: 2px solid #6fa3e8;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* For smooth transitions */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; 
 }
 
-/* For effect and reason sections */
 .reasons, .effects {
     background-color: #e1efff;
     border: 2px solid #6fa3e8;
     border-radius: 10px;
     padding: 20px;
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* For smooth transitions */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; 
 }
 
-/* Adding subtle hover effects to sections */
 .intro:hover, .purpose:hover, .importance:hover, .link-section:hover, .reasons:hover, .effects:hover {
     background-color: #d0eaff;
-    transform: scale(1.05) translateY(-10px); /* Slightly grows and shifts up */
+    transform: scale(1.05) translateY(-10px);
 }
 
-/* Adjusting the video size for proper ratio */
 video {
     width: 100%;
     max-width: 720px;
     height: auto;
 }
 
-/* Animation for links */
 a {
     transition: color 0.3s ease-in-out;
 }
 
 a:hover {
-    color: #ff4500; /* Color change on hover */
+    color: #ff4500; 
     text-decoration: underline;
 }
 
-/* New Styles for Image Section */
 .image-section {
     background-color: #e1efff;
     border: 2px solid #6fa3e8;
@@ -164,7 +150,6 @@ a:hover {
     border: 2px solid #0074d9;
 }
 
-/* Adding transformation to buttons or any clickable elements */
 button {
     padding: 10px 20px;
     background-color: #0074d9;
@@ -176,5 +161,5 @@ button {
 }
 
 button:hover {
-    transform: scale(1.1); /* Button grows slightly on hover */
+    transform: scale(1.1); 
 }
