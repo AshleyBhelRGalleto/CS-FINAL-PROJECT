@@ -1,57 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Academic Poverty - Education for All</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education for All</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Header Section -->
     <header>
-        <h1>Education for All</h1>
-        <p>Effects and Reasons of not having a Quality Education for all</p>
+        <div class="header-content">
+            <h1>EDUCATION FOR ALL</h1>
+            <p>Effects and Reasons of not having Quality Education for All</p>
+        </div>
     </header>
 
-    <!-- Navigation Section -->
     <nav class="topnav">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="reasons.html" class="nav-link">Reasons</a>
-        <a href="effects.html" class="nav-link">Effects</a>
+        <a href="home.html">Home</a>  
+        <a href="reasons.html">Reasons</a>
+        <a href="effects.html">Effects</a>
     </nav>
 
-    <!-- Main Content Section -->
     <main>
-        <section class="row">
-            <article class="column">
-                <h2>What is it about?</h2>
-                <p>The website examines the important implications of children not having access to the best possible education...</p>
-                <img src="images/home.jpg" alt="About this" class="image">
-            </article>
+        <section class="intro">
+            <h2>What is it about?</h2>
+            <p>The website examines the important implications of children not having access to the best possible education...</p>
+            
+            <!-- Added an audio player -->
+            <h3>Listen to our introduction audio:</h3>
+            <audio controls>
+                <source src="audio/introduction_audio.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
 
-            <article class="column">
-                <h2>What is the purpose?</h2>
-                <p>The website's goal is to educate users on the several causes for the lack of high-quality education...</p>
-                <audio controls>
-                    <source src="audios/homepageaudio.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </article>
+        <section class="purpose">
+            <h2>What is the purpose?</h2>
+            <p>The website's goal is to educate users on the several causes for the lack of high-quality education...</p>
+        </section>
 
-            <article class="column">
-                <h2>Why is it important?</h2>
-                <p>The website acts as a call to action, asking readers to be aware of these social concerns...</p>
-                <video width="320" height="240" controls>
-                    <source src="videos/homepagevideo.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </article>
+        <section class="importance">
+            <h2>Why is it important?</h2>
+            <p>The website acts as a call to action, asking readers to be aware of these social concerns...</p>
+        </section>
+
+        <section class="link-section">
+            <h2>Learn More About Education Initiatives</h2>
+            <p>For more information on global education initiatives, visit <a href="https://www.worldbank.org/en/topic/poverty" target="_blank">Global Education</a>.</p>
+        </section>
+
+        <section class="reasons">
+            <h2>Reasons for Inequality in Education</h2>
+            <ul>
+                <li>Poverty and limited resources</li>
+                <li>Geographical disparities</li>
+                <li>Social and gender biases</li>
+                <li>Lack of infrastructure and access to schools</li>
+            </ul>
+        </section>
+
+        <section class="effects">
+            <h2>Effects of Poor Education</h2>
+            <ul>
+                <li>Limited job opportunities and lower income</li>
+                <li>Increased inequality and social unrest</li>
+                <li>Impaired personal and community development</li>
+            </ul>
+        </section>
+
+        <!-- Added image section -->
+        <section class="image-section">
+            <h2>Visualizing Education for All</h2>
+            <img src="images/education_image.jpg" alt="Education for All" class="education-image">
         </section>
     </main>
 
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Education for All</p>
+        <p>EDUCATION FOR ALL - Empowering the Future</p>
     </footer>
-
 </body>
 </html>
+
