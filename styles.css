@@ -1,0 +1,162 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Baby blue background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #a7c6ed; /* Lighter blue for header */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Navigation styles */
+nav.topnav {
+    background-color: #6fa3e8; /* Light blue navigation bar */
+    overflow: hidden;
+}
+
+nav.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav.topnav a:hover {
+    background-color: #4f8cd7;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #0074d9;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Audio and Video Styles */
+audio, video {
+    max-width: 100%;
+    margin-top: 10px;
+    border: 2px solid #0074d9;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Links and Buttons */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    background-color: #a7c6ed; /* Same as header */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Styling for sections with multimedia (audio, video) */
+.intro, .purpose, .importance, .link-section {
+    background-color: #e1efff;
+    border: 2px solid #6fa3e8;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* For effect and reason sections */
+.reasons, .effects {
+    background-color: #e1efff;
+    border: 2px solid #6fa3e8;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Adding subtle hover effects to sections */
+.intro:hover, .purpose:hover, .importance:hover, .link-section:hover, .reasons:hover, .effects:hover {
+    background-color: #d0eaff;
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Adjusting the video size for proper ratio */
+video {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+}
+
+/* Animation for links */
+a {
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ff4500; /* Color change on hover */
+    text-decoration: underline;
+}
+
+/* New Styles for Image Section */
+.image-section {
+    background-color: #e1efff;
+    border: 2px solid #6fa3e8;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.education-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 2px solid #0074d9;
+}
