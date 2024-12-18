@@ -1,9 +1,11 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styles */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f8ff;
@@ -11,6 +13,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header Styles */
 header {
     background-color: #a7c6ed; 
     color: #fff;
@@ -27,6 +30,7 @@ header p {
     font-size: 1.2rem;
 }
 
+/* Navigation Bar */
 nav.topnav {
     background-color: #6fa3e8; 
     overflow: hidden;
@@ -46,10 +50,12 @@ nav.topnav a:hover {
     background-color: #4f8cd7;
 }
 
+/* Main Content */
 main {
     padding: 20px;
 }
 
+/* Section Styles */
 section {
     margin-bottom: 30px;
 }
@@ -60,14 +66,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-ul {
-    list-style-type: none;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
+/* Audio and Video */
 audio, video {
     max-width: 100%;
     margin-top: 10px;
@@ -76,6 +75,7 @@ audio, video {
     padding: 5px;
 }
 
+/* Links */
 a {
     color: #0066cc;
     text-decoration: none;
@@ -107,6 +107,7 @@ a[href*="reasons.html"] {
     background-color: #ffeb3b;
 }
 
+/* Footer Styles */
 footer {
     background-color: #a7c6ed; 
     color: #fff;
@@ -117,6 +118,7 @@ footer {
     bottom: 0;
 }
 
+/* Hover Effect for Sections */
 .intro, .purpose, .importance, .link-section {
     background-color: #e1efff;
     border: 2px solid #6fa3e8;
@@ -134,26 +136,20 @@ footer {
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; 
 }
 
+/* Hover Effect for Section Containers */
 .intro:hover, .purpose:hover, .importance:hover, .link-section:hover, .reasons:hover, .effects:hover {
     background-color: #d0eaff;
     transform: scale(1.05) translateY(-10px);
 }
 
+/* Video Styling */
 video {
     width: 100%;
     max-width: 720px;
     height: auto;
 }
 
-a {
-    transition: color 0.3s ease-in-out;
-}
-
-a:hover {
-    color: #ff4500; 
-    text-decoration: underline;
-}
-
+/* Image Section */
 .image-section {
     background-color: #e1efff;
     border: 2px solid #6fa3e8;
@@ -170,6 +166,7 @@ a:hover {
     border: 2px solid #0074d9;
 }
 
+/* Button Styles */
 button {
     padding: 10px 20px;
     background-color: #0074d9;
@@ -182,4 +179,38 @@ button {
 
 button:hover {
     transform: scale(1.1); 
+}
+
+/* Flying Book Section */
+.flying-book-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e1efff;
+    border: 2px solid #6fa3e8;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Flying Book Animation */
+.flying-book {
+    position: absolute;
+    bottom: 10%;
+    left: -200px; /* Start off-screen to the left */
+    animation: flyBook 5s ease-in-out infinite;
+}
+
+/* Keyframes for the flying book animation */
+@keyframes flyBook {
+    0% {
+        left: -200px; /* Start off-screen on the left */
+        transform: rotate(0deg); /* No rotation at start */
+    }
+    50% {
+        left: 50%; /* Move to the center of the screen */
+        transform: rotate(10deg); /* Slightly rotate as it moves */
+    }
+    100% {
+        left: 100%; /* End off-screen to the right */
+        transform: rotate(-10deg); /* Rotate in the opposite direction */
+    }
 }
