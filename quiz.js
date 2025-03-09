@@ -75,7 +75,7 @@ function displayQuestion() {
     }
 
     questionText.textContent = quizData[currentQuestion].question;
-    choicesContainer.innerHTML = ""; // Clear previous choices
+    choicesContainer.innerHTML = "";
 
     quizData[currentQuestion].choices.forEach((choice, index) => {
         const button = document.createElement("button");
@@ -85,7 +85,7 @@ function displayQuestion() {
         choicesContainer.appendChild(button);
     });
 
-    document.getElementById("nextBtn").classList.add("hidden"); // Hide Next button initially
+    document.getElementById("nextBtn").classList.add("hidden");
     document.getElementById("nextBtn").disabled = true;
 }
 
@@ -123,9 +123,10 @@ document.getElementById("nextBtn").addEventListener("click", () => {
 
 function showResults() {
     const quizContainer = document.getElementById("quiz");
-    quizContainer.innerHTML = `
-        <h2>Your score: ${score} out of ${quizData.length} 🎯</h2>
-    `;
+    quizContainer.innerHTML = 
+        "<h2>Your score: " + score + " out of " + quizData.length + " 🎯</h2>";
+    document.getElementById("nextBtn").classList.add("hidden"); // Hide Next button
+}
 
     document.getElementById("restartBtn").addEventListener("click", () => {
         currentQuestion = 0;
