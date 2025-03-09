@@ -90,10 +90,12 @@ function displayQuestion() {
 }
 
 function checkAnswer(selectedIndex, button) {
-    const correctIndex = quizData[currentQuestion].correct;
+    const correctIndex = quizData[currentQuestion].correct; // Fixed typo
     const resultMessage = document.createElement("p");
+
     resultMessage.style.fontSize = "1.5rem";
     resultMessage.style.marginTop = "15px";
+}
 
     if (selectedIndex === correctIndex) {
         button.classList.add("correct");
