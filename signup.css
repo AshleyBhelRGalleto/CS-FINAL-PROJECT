@@ -1,0 +1,103 @@
+.topnav {
+  background-color: #6fa3e8;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.topnav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.topnav a:hover {
+  background-color: #4f8cd7;
+}
+
+.topnav a.active {
+  background-color: #004a99;
+  font-weight: 700;
+}
+
+/* Signup container */
+.signup-container {
+  background-color: #d7e8ff;
+  padding: 30px;
+  width: 60%;
+  margin: 40px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 128, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.signup-container h2 {
+  color: #004a99;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.signup-container form label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #003366;
+}
+
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"],
+.signup-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #4f8cd7;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.signup-container input[type="text"]:focus,
+.signup-container input[type="email"]:focus,
+.signup-container input[type="password"]:focus,
+.signup-container textarea:focus {
+  border-color: #0074d9;
+  outline: none;
+}
+
+.signup-container textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.signup-container button {
+  background-color: #0074d9;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: block;
+  margin: 30px auto 0 auto;
+  width: 50%;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.signup-container button:hover {
+  background-color: #005bb5;
+  transform: scale(1.05);
+}
+
+.error {
+  color: #cc0000;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  display: block;
+}
