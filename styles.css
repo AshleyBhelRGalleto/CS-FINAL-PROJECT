@@ -1,3 +1,4 @@
+/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header styles */
 header {
     background-color: #a7c6ed; 
     color: #fff;
@@ -27,6 +29,7 @@ header p {
     font-size: 1.2rem;
 }
 
+/* Navigation */
 nav.topnav {
     background-color: #6fa3e8; 
     overflow: hidden;
@@ -46,6 +49,7 @@ nav.topnav a:hover {
     background-color: #4f8cd7;
 }
 
+/* Main content */
 main {
     padding: 20px;
 }
@@ -60,6 +64,7 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* Media elements */
 audio, video {
     max-width: 100%;
     margin-top: 10px;
@@ -68,6 +73,13 @@ audio, video {
     padding: 5px;
 }
 
+video {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+}
+
+/* Links */
 a {
     color: #0066cc;
     text-decoration: none;
@@ -99,6 +111,7 @@ a[href*="reasons.html"] {
     background-color: #ffeb3b;
 }
 
+/* Footer */
 footer {
     background-color: #a7c6ed; 
     color: #fff;
@@ -109,7 +122,9 @@ footer {
     bottom: 0;
 }
 
-.intro, .purpose, .importance, .link-section {
+/* Containers for various sections */
+.intro, .purpose, .importance, .link-section,
+.reasons, .effects {
     background-color: #e1efff;
     border: 2px solid #6fa3e8;
     border-radius: 10px;
@@ -118,27 +133,13 @@ footer {
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; 
 }
 
-.reasons, .effects {
-    background-color: #e1efff;
-    border: 2px solid #6fa3e8;
-    border-radius: 10px;
-    padding: 20px;
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; 
-}
-
-.intro:hover, .purpose:hover, .importance:hover, .link-section:hover, .reasons:hover, .effects:hover {
+.intro:hover, .purpose:hover, .importance:hover, .link-section:hover,
+.reasons:hover, .effects:hover {
     background-color: #d0eaff;
     transform: scale(1.05) translateY(-10px);
 }
 
-/* Video Styling */
-video {
-    width: 100%;
-    max-width: 720px;
-    height: auto;
-}
-
-/* Image Section */
+/* Image section */
 .image-section {
     background-color: #e1efff;
     border: 2px solid #6fa3e8;
@@ -155,6 +156,7 @@ video {
     border: 2px solid #0074d9;
 }
 
+/* Buttons */
 button {
     padding: 10px 20px;
     background-color: #0074d9;
@@ -169,6 +171,7 @@ button:hover {
     transform: scale(1.1); 
 }
 
+/* Flying book animation section */
 .flying-book-section {
     text-align: center;
     padding: 50px 20px;
@@ -199,6 +202,8 @@ button:hover {
         transform: rotate(-10deg);
     }
 }
+
+/* Icons */
 icon {
     width: 116px; 
     height: 235px;
@@ -221,6 +226,7 @@ icon {
     margin-top: 10px;
 }
 
+/* Quiz section */
 .quiz-section {
     text-align: center;
     margin-top: 30px;
