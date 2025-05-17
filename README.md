@@ -1,2 +1,2 @@
 # FINAL PROJECT
-- https://ashleybhelrgalleto.github.io/Q2_Final_Project/
+- https://ashleybhelrgalleto.github.io/CS-FINAL-PROJECT/
